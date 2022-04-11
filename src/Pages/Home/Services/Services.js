@@ -14,7 +14,7 @@ const Services = () => {
     }, [])
     return (
         <div>
-            <h2>services : {services.length}</h2>
+            <h2 className='d-flex justify-content-center mt-1 text-primary'>Our Sevices</h2>
             <div className="service">
                 {
                     services.map(service => <Service service={service} key={service.id}></Service>)

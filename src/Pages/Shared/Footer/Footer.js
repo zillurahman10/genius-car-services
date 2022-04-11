@@ -11,7 +11,7 @@ const Footer = () => {
     }, [])
 
     return (
-        <footer style={{ display: "flex", justifyContent: "center" }}>
+        <footer style={{ display: "flex", justifyContent: "center", bottom: '0' }}>
             <p><small>Copyright @ {date}</small></p>
         </footer>
     );

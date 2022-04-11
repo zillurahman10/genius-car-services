@@ -9,7 +9,7 @@ const Service = ({ service }) => {
                 <h2>{name}</h2>
                 <p>Price : {price}</p>
                 <p><small>{description}</small></p>
-                <button style={{ marginBottom: '30px' }}>Book : {name}</button>
+                <button style={{ marginBottom: '30px' }} className='btn btn-primary'>Book : {name}</button>
             </div>
         </div>
     );
