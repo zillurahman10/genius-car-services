@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Footer = () => {
+    const [date, setDate] = useState();
+
+    const getYear = () => setDate(new Date().getFullYear())
+
+
+    useEffect(() => {
+        getYear();
+    }, [])
+
     return (
-        <footer>
-            <h2>This is footer</h2>
+        <footer style={{ display: "flex", justifyContent: "center" }}>
+            <p><small>Copyright @ {date}</small></p>
         </footer>
     );
 };
